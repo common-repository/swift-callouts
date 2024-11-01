@@ -1,0 +1,77 @@
+
+/* cbs-admin-stylesheet.css
+ * 
+ * CSS style data used on the admin page
+ * 
+ * PHP version 5
+ * 
+ * @author      Rane Wallin
+ * @copyright   SwiftWP
+ * @license     GPLv2
+ * @version     0.7.0
+ * @link        http://swiftwp.com/swift-callouts-swiftwp-wordpress-callout-plugin/
+ * 
+ */
+
+body {
+    background-color: #FFFFFF;
+    height: 1100px;
+}
+
+h1.ecbsAdmin {
+    text-align: center;
+}
+
+/* The area where templates load when selected for editing */
+#ecbs-edit-area {
+    /*background-color: #E6E6E6;*/
+    width: 75%;
+    padding: 10px;
+    height: 725px;
+}
+
+/* 
+ * The area that lists various styles that can be edited. It is hidden until a template
+ * is selected 
+ */
+#ecbs-options-form {
+	background-color: #E6E6E6;
+     border: 3px dotted; 
+    width: 45%; 
+    float: left;
+    height: 725px;
+}
+
+/*
+ * The area where default content can be added to the template. It contains a textarea
+ */
+#ecbs-textbox-area {
+    background-color: #E6E6E6;
+    border: 3px dotted; 
+    margin-left: 45%;
+    height: 725px;
+}
+
+h2#ecbs-updated {
+    color: #FF0000;
+    text-align:center;
+}
+
+/*
+ * Creates the default style for the tool tips that display when the user
+ * mouses over the help icon or label.
+ */
+#dhtmltooltip {
+	position: absolute;
+	left: -300px;
+	width: 150px;
+	border: 3px groove black;
+	padding: 5px;
+	background-color: #FFFFE0;
+	color: #000;
+	visibility: hidden;
+	z-index: 100;
+	 box-shadow: 5px 5px 5px #888888;
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=gray, direction=135);
+}
